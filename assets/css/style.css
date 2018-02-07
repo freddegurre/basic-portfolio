@@ -1,0 +1,12 @@
+body{
+   background-color: lightgray;
+}
+
+h1, h2 {
+    color: #4aaaa5;
+}
+
+#nav {
+    background: #4aaaa5;
+    color: white;
+}
