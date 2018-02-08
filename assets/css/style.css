@@ -21,7 +21,7 @@ nav{
     margin-top: 180px;
 }
 
-#main-section {
+.main-section {
     width: 650px;
     background: #ffffff;
     float: left;
@@ -33,7 +33,7 @@ nav{
 
 }
 
-#connect {
+.connect {
     width: 200px;
     background: #ffffff;
     float: left;
