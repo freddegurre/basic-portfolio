@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>Portfolio</title>
+    <!-- Link to stylesheet reset to clear styles from al browsers -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+</head>
 
 <body>
+    <header>
+        <nav>
+            <div class="nav-cointainer">
+                <div class="logo">
+                    <h1 id="white">Fredrik Gustafson</h1>
+                </div>
 
-<nav>
-    <p>Fredrik Gustafson</p>
-    <a href="index.html"> About</a>
-    <a href="portfolio.html"> Portfolio</a>
-    <a href="contact.html"> Contact</a>
-</nav>
+                <div class="nav-bar">
+                    <ul>
+                        <li>
+                            <a href="index.html"> About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html"> Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 
     <div class="container">
         <section class="main-section">
-            <h1>Portfolio</h1>
-            <div class="divider"></div>
-            <div class="flexparent-portfolio">
-                <div class="portfolio-item"></div>
-                <div class="portfolio-item"></div>
-                <div class="portfolio-item"></div>
-                <div class="portfolio-item"></div>
+            <div class="padding">
+                <h1>Portfolio</h1>
+                <div class="divider"></div>
+                <div class="flexparent-portfolio">
+                    <div class="portfolio-item">
+                        <div class="project-name"> 1 </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="project-name"> 2 </div>
+                    </div>
+                    <!--<div class="portfolio-item"></div>
+                    <div class="portfolio-item"></div> -->
 
-            </div>
+                </div>
         </section>
 
+
         <section class="connect">
-            
-            <h2>Connect with me</h2>
-            <div class="divider"></div>
+            <div class="padding">
+                <h2>Connect with me</h2>
+                <div class="divider"></div>
                 <a href="https://github.com/freddegurre" target="blank">
                     <img class="connect-img" src="assets/images/GitHub-Mark.png" alt="Github">
                 </a>
                 <a href="https://www.linkedin.com/in/fredrik-gustafson-a634b5114/" target="blank">
-                <img class="connect-img" src="assets/images/linkedin.png" alt="Linkedin">
+                    <img class="connect-img" src="assets/images/linkedin.png" alt="Linkedin">
                 </a>
                 <a href="https://stackoverflow.com/users/8981539/fredrik" target="blank">
-                <img class="connect-img" src="assets/images/stackOverflow.png" alt="Stack Overflow">
+                    <img class="connect-img" src="assets/images/stackOverflow.png" alt="Stack Overflow">
                 </a>
-
+            </div>
         </section>
-    </div>
+        </div>
 
- <footer>
-     @copyright 2018 Fredrik Gustafson
-</footer>
-</body>    
+        <footer>
+            <P id="footer"></P>@copyright 2018 Fredrik Gustafson
+        </footer>
+</body>
+
 </html>

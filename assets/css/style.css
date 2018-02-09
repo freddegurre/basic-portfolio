@@ -4,57 +4,197 @@ body {
     background-image: url(../images/playstation-pattern.png);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* styling for header and navbar*/
 nav{
     position: fixed;
     top: 0;
     width: 100%;
+    height: 90px;
     background:#ffffff;
+    border-bottom: 2px;
+    border-color: #cccccc;
+    border-style: solid;
 }
 
-.navigation {
-    text-align: left
+.nav-cointainer {
+    width: 960px;
+    margin: 0 auto;
 }
+
+.logo {
+    display: inline-block;
+    background:#4aaaa5;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    height: 90px;
+}
+
+/*nav items*/
+.nav-bar {
+    float: right;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    padding-top: 40px;
+    color: #cccccc;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #777777;
+}
+a:visited {
+    color:#777777;
+  }
+
+li:hover {
+    font-size: 18px;
+}
+
+/* the container works as the relative parent for the
+main section and connect section blocks whos 
+possitions are absolute to the container*/
 
 .container {
-    width: 1024px;
+    position: relative;
+    width: 960px;
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: 160px;
 }
 
+/* the main section it includes, about me, protfolio & contact*/
 .main-section {
+    position: absolute;
+    left: 0;
     width: 650px;
     background: #ffffff;
-    float: left;
-    margin-right: 40px;
-    padding: 15px;
     border-color: #cccccc;
     border-style: solid;
     border-width: 1px;
 
-}
-
-.connect {
-    width: 200px;
-    background: #ffffff;
-    float: left;
-    padding: 15px;
-    border-color: #cccccc;
-    border-style: solid;
-    border-width: 1px;
 }
 
 #bio-image {
     height: 200px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 15px; 
+}
+
+/* structure for my proftfolio inside the main-section container*/
+.flexparent-portfolio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    height: 200px;
+    width: 250px;
+    background: lightgray;
+}
+
+.project-name {
+    height: 40px;
+    width: 100%;
+    background-color: #4aaaa5;
+    margin-top: 115px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Contact me form styling, al whitin main-section */
+
+input {
+    width: 99%;
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+input:hover {
+    border-style: solid;
+    border-color: #4aaaa5;
+    border-width: 2px;
+}
+
+
+textarea {
+    width: 99%;
+    height: 150px;
+    margin-top: 5px;
+}
+
+textarea:hover {
+    border-style: solid;
+    border-color: #4aaaa5;
+    border-width: 2px;
+}
+
+
+.submit {
+    height: 30px;
+    background: #4aaaa5;
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.submit:hover { 
+    background: tomato;
+}
+
+/*connect is shown on al three pages, with linkes to my accounts */
+.connect {
+    position: absolute;
+    right: 0;
+    width: 265px;
+    background: #ffffff;
+    padding: 0px;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.padding {
+    padding: 15px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #cccccc;
+    margin-bottom: 26px;   
 }
 
 .connect-img {
     height: 40px;
-    width: 40px;
     margin: 11px;
+    height: 44px;
+    margin: 15px;
 }
 
+.connect-img:hover {
+    height: 48px;
+    width: 48px;
+
+}
+
+
+
+
+
+/* footer */
 footer {
     position: absolute;
     width: 100%;
@@ -64,25 +204,13 @@ footer {
     border-top: 5px;
     border-color: #4aaaa5;
     border-style: solid;
-
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.divider {
-    height: 2px;
-    background-color: #cccccc;
-    margin-bottom: 26px;   
-}
 
-.flexparent-portfolio {
-    display: flex;
-    justify-content: space-around;
-}
-
-.portfolio-item {
-    height: 80px;
-    width: 80px;
-    background: cadetblue;
-}
+/*fonts and text styles*/
 
 h1 {
     color: #4aaaa5;
@@ -91,12 +219,9 @@ h1 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-#nav-text {
-    background-color: #4aaaa5;
-    color: #cccccc;
-    font-size: 24px;
-    font-weight: bold;
+#white {
+    color: white;
+    padding-top: 32px;
 }
 
 h2 {
@@ -111,6 +236,11 @@ p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 16px;
+}
 
+#footer {
+    font-size: 5px;
+    color: steelblue;
+    margin-top: 30px;
 }

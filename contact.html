@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>Contact</title>
+    <!-- Link to stylesheet reset to clear styles from al browsers -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+</head>
 
 <body>
+    <header>
+        <nav>
+            <div class="nav-cointainer">
+                <div class="logo">
+                    <h1 id="white">Fredrik Gustafson</h1>
+                </div>
 
-<nav>
-    <p>Fredrik Gustafson</p>
-    <a href="index.html"> About</a>
-    <a href="portfolio.html"> Portfolio</a>
-    <a href="contact.html"> Contact</a>
-</nav>
+                <div class="nav-bar">
+                    <ul>
+                        <li>
+                            <a href="index.html"> About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html"> Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <div class="container">
         <section class="main-section">
-            <h1>Contact</h1>
-            <div class="divider"></div>
-            <form>
-                Name:<br>
-                <input type="text" name="Firstname">
-                <br>
-                Email:<br>
-                <input type="text" name="Email">
-                <br>
-                Message:<br>
-                <textarea>
-
-                </textarea>
-                <button class="submit">Submit</button>
-            </form>
+            <div class="padding">
+                <h1>Contact</h1>
+                <div class="divider"></div>
+                <form class="form">
+                    <p>Name:
+                        <br>
+                    </p>
+                    <input type="text" name="Firstname">
+                    <br>
+                    <p>Email:
+                        <br>
+                    </p>
+                    <input type="text" name="Email">
+                    <br>
+                    <p> Message:
+                        <br>
+                    </p>
+                    <textarea>
+Please leave message!
+                    </textarea>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
         </section>
 
         <section class="connect">
-            
-            <h2>Connect with me</h2>
-            <div class="divider"></div>
+            <div class="padding">
+                <h2>Connect with me</h2>
+                <div class="divider"></div>
                 <a href="https://github.com/freddegurre" target="blank">
                     <img class="connect-img" src="assets/images/GitHub-Mark.png" alt="Github">
                 </a>
                 <a href="https://www.linkedin.com/in/fredrik-gustafson-a634b5114/" target="blank">
-                <img class="connect-img" src="assets/images/linkedin.png" alt="Linkedin">
+                    <img class="connect-img" src="assets/images/linkedin.png" alt="Linkedin">
                 </a>
                 <a href="https://stackoverflow.com/users/8981539/fredrik" target="blank">
-                <img class="connect-img" src="assets/images/stackOverflow.png" alt="Stack Overflow">
+                    <img class="connect-img" src="assets/images/stackOverflow.png" alt="Stack Overflow">
                 </a>
-
+            </div>
         </section>
     </div>
 
     <footer>
-            @copyright 2018 Fredrik Gustafson
-     </footer>
+        <P id="footer"></P>@copyright 2018 Fredrik Gustafson
+    </footer>
 
-</body>    
+</body>
+
 </html>

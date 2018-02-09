@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <title>About Me</title>
+    <!-- Link to stylesheet reset to clear styles from al browsers -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+</head>
 
 <body>
+    <!-- header and nav section -->
+    <header>
+        <nav>
+            <div class="nav-cointainer">
+                <div class="logo">
+                    <h1 id="white">Fredrik Gustafson</h1>
+                </div>
 
-<nav> 
-   <p>Fredrik Gustafson</p>
-    <a href="index.html"> About</a>
-    <a href="portfolio.html"> Portfolio</a>
-    <a href="contact.html"> Contact</a>
-</nav>
+                <div class="nav-bar">
+                    <ul>
+                        <li>
+                            <a href="index.html"> About</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html"> Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- a try to center the "container" vertically but with no luck :( <div class="super-container"> -->
+        <div class="container">
+            <section class="main-section">  
+                <div class="padding">
+                    <h1>Fredrik Gustafson</h1>
+                    <div class="divider"></div>
+                    <img id="bio-image" src="assets/images/fredrik.png" alt="Picture of fredrik">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                        of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                        <br>
+                        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deserunt corporis eius voluptas nobis
+                        nulla omnis ut vitae quasi. Cumque natus autem ea laboriosam? Libero error nemo voluptate consectetur
+                        illum.</p>
+                </div>
+            </section>
 
-    <div class="container">
-        <section class="main-section">
-            <h1>Fredrik Gustafson</h1>
-                <div class="divider"></div>
-                <img id="bio-image" src="assets/images/fredrik.png" alt="Picture of fredrik">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                    <br>
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque deserunt corporis eius voluptas nobis nulla omnis ut vitae quasi. Cumque natus autem ea laboriosam? Libero error nemo voluptate consectetur illum.</p>
-        </section>
-
-        <section class="connect">
-            
-            <h2>Connect with me</h2>
-            <div class="divider"></div>
+            <section class="connect">
+                <div class="padding">
+                    <h2>Connect with me</h2>
+                    <div class="divider"></div>
                     <a href="https://github.com/freddegurre" target="blank">
                         <img class="connect-img" src="assets/images/GitHub-Mark.png" alt="Github">
                     </a>
                     <a href="https://www.linkedin.com/in/fredrik-gustafson-a634b5114/" target="blank">
-                    <img class="connect-img" src="assets/images/linkedin.png" alt="Linkedin">
+                        <img class="connect-img" src="assets/images/linkedin.png" alt="Linkedin">
                     </a>
                     <a href="https://stackoverflow.com/users/8981539/fredrik" target="blank">
-                    <img class="connect-img" src="assets/images/stackOverflow.png" alt="Stack Overflow">
+                        <img class="connect-img" src="assets/images/stackOverflow.png" alt="Stack Overflow">
                     </a>
+                </div>
+            </section>
+        </div>
+   <!-- </div> -->
 
-        </section>
-    </div>
-
-<footer>
-    @copyright 2018 Fredrik Gustafson
-</footer>
+    <footer>
+        <P id="footer"></P>@copyright 2018 Fredrik Gustafson
+    </footer>
 
 
 </body>
+
 </html>
